@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title><script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 flex h-screen overflow-hidden">
+  <aside class="w-64 bg-slate-900 text-white flex flex-col">
+    <div class="p-4 text-xl font-bold border-b border-slate-700">Admin Panel</div>
+    <nav class="flex-1 p-4 space-y-2">
+      <a href="dashboard-web2.html" class="block p-2 hover:bg-slate-700 rounded">Dashboard</a>
+      <a href="products-web2.html" class="block p-2 bg-blue-600 rounded">Products</a>
+      <a href="#" class="block p-2 hover:bg-slate-700 rounded">Users</a>
+      <a href="#" class="block p-2 hover:bg-slate-700 rounded">Settings</a>
+    </nav>
+    <a href="index-web2.html" class="p-4 bg-red-600 hover:bg-red-700 text-center font-bold">Logout</a>
+  </aside>
+  <div class="flex-1 flex flex-col">
+    <header class="bg-white shadow px-6 py-4 font-semibold text-gray-700 text-lg">Manajemen Produk</header>
+    <main class="flex-1 p-6 overflow-auto">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Manajemen Produk</h1>
+        <a href="add-produk-web2.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">+ Add Product</a>
+      </div>
+      <div class="bg-white shadow-sm rounded-lg overflow-hidden">
+        <table class="w-full text-left border-collapse">
+          <thead class="bg-gray-200 text-gray-700">
+            <tr><th class="p-4 border-b">No</th><th class="p-4 border-b">Name</th><th class="p-4 border-b">Stock</th><th class="p-4 border-b">Action</th></tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-50 border-b">
+              <td class="p-4">1</td><td class="p-4">500 Robux</td><td class="p-4">10</td>
+              <td class="p-4">
+                <a href="edit-produk-web2.html" class="text-blue-600 hover:underline mr-3">Edit</a>
+                <a href="#" class="text-red-600 hover:underline">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="bg-white p-4 text-center text-sm text-gray-500 border-t border-gray-200">&copy; 2026 Shadiq Wily Widyadhana</footer>
+  </div>
+</body>
+</html>

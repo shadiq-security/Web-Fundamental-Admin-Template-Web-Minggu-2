@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Produk</title><script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 flex h-screen overflow-hidden">
+  <aside class="w-64 bg-slate-900 text-white flex flex-col">
+    <div class="p-4 text-xl font-bold border-b border-slate-700">Admin Panel</div>
+    <nav class="flex-1 p-4 space-y-2">
+      <a href="dashboard-web2.html" class="block p-2 hover:bg-slate-700 rounded">Dashboard</a>
+      <a href="products-web2.html" class="block p-2 bg-blue-600 rounded">Products</a>
+      <a href="#" class="block p-2 hover:bg-slate-700 rounded">Users</a>
+      <a href="#" class="block p-2 hover:bg-slate-700 rounded">Setting</a>
+    </nav>
+    <a href="index-web2.html" class="p-4 bg-red-600 hover:bg-red-700 text-center font-bold">Logout</a>
+  </aside>
+  <div class="flex-1 flex flex-col">
+    <header class="bg-white shadow px-6 py-4 font-semibold text-gray-700 text-lg">Manajemen Produk</header>
+    <main class="flex-1 p-6 overflow-auto">
+      <h1 class="text-2xl font-bold mb-6 text-gray-800">Edit Produk</h1>
+      <form action="products-web2.html" class="bg-white p-6 rounded-lg shadow-sm max-w-2xl">
+        <label class="block text-sm font-semibold mb-2">Name</label>
+        <input type="text" value="500 Robux" class="w-full border p-2 rounded mb-4 focus:ring focus:ring-blue-200" required>
+        <label class="block text-sm font-semibold mb-2">Stock</label>
+        <input type="number" value="10" class="w-full border p-2 rounded mb-4 focus:ring focus:ring-blue-200" required>
+        <label class="block text-sm font-semibold mb-2">Description</label>
+        <textarea rows="4" class="w-full border p-2 rounded mb-6 focus:ring focus:ring-blue-200">Top-up 500 robux melalui fitur Plus subscription!</textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Submit</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
